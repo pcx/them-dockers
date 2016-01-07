@@ -1,0 +1,10 @@
+idea15:
+  image: pcxio/idea15:0.1.0
+  container_name: idea15
+  hostname: idea15
+  environment:
+    - DISPLAY
+  volumes:
+    - /home/pcx/base/IdeaProjects:/home/idea/IdeaProjects
+    - /tmp/.X11-unix:/tmp/.X11-unix
+    - /home/pcx/base:/base
